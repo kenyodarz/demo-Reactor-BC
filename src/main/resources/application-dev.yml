@@ -1,0 +1,20 @@
+# Database configuration
+spring:
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/AmbientesBC-Demo
+    username: postgres
+    password: postgres
+    driver: postgres
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/AmbientesBC-Demo
+    username: postgres
+    password: postgres
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    org.springframework.data.r2dbc: DEBUG
+    org.springframework.r2dbc: DEBUG
